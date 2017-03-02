@@ -10,8 +10,7 @@ object MapPerformance {
       println(n, d, k1, k2)
       checkArgs(n, d, k1, k2)
       new MapPerformance(n, d, k1, k2).run
-    }
-    catch {
+    } catch {
       case _: Throwable =>
         println("usage: sbt 'run n d k1 k2'")
     }
